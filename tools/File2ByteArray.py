@@ -1,3 +1,4 @@
+import os
 import sys
 
 def file_to_c_array(filename, array_name="payloadBuffer"):
@@ -17,7 +18,7 @@ def file_to_c_array(filename, array_name="payloadBuffer"):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print(f"Usage: python {sys.argv[0]} <filename>")
+        print(f"Usage: {os.path.basename(sys.argv[0])} <filename>")
         sys.exit(1)
 
     filename = sys.argv[1]
