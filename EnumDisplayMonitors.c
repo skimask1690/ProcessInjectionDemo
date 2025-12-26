@@ -11,7 +11,6 @@ BOOL CALLBACK MonitorEnumProc(
     LPARAM dwData
 )
 {
-    // Execution path
     ((void(*)())dwData)();
     return TRUE;
 }
