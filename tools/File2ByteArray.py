@@ -10,7 +10,7 @@ def file_to_c_array(filename, array_name="payloadBuffer"):
         sys.exit(1)
 
     hex_bytes = [f"0x{b:02x}" for b in content]
-    array_str = f"unsigned char {array_name}[] = {{ " + ", ".join(hex_bytes) + " };"
+    array_str = f"unsigned char {array_name}[] = {{" + ",".join(hex_bytes) + "};"
 
     return array_str
 
