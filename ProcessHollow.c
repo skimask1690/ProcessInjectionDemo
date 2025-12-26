@@ -2,7 +2,7 @@
 
 // Configuration
 char *targetPath = "explorer.exe";
-unsigned char payloadBuffer[] = { /* shellcode bytes go here */ }
+unsigned char payloadBuffer[] = { /* shellcode bytes go here */ };
 
 int main() {
     STARTUPINFOA si = {0};
