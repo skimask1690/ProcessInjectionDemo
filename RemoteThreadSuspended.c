@@ -1,5 +1,6 @@
 #include <windows.h>
 
+// Configuration
 char *targetPath = "explorer.exe";
 unsigned char payloadBuffer[] = { /* shellcode bytes go here (unstable) */ };
 
