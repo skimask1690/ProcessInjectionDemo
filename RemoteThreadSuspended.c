@@ -2,7 +2,7 @@
 
 // Configuration
 char *targetPath = "explorer.exe";
-unsigned char payloadBuffer[] = { /* shellcode bytes go here. the shellcode must exit the process, otherwise the process will remain suspended indefinitely */ };
+unsigned char payloadBuffer[] = { /* shellcode bytes go here. the shellcode must exit the process, otherwise the process will remain suspended */ };
 
 int main()
 {
