@@ -10,7 +10,7 @@ int main()
     PROCESS_INFORMATION pi = {0};
     si.cb = sizeof(si);
 
-    // 1. Create target process
+    // 1. Create target process suspended
     CreateProcessA(NULL, targetPath, NULL, NULL, FALSE, CREATE_SUSPENDED, NULL, NULL, &si, &pi);
 
     // 2. Allocate memory in target process
