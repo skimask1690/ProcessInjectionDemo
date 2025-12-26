@@ -1,5 +1,6 @@
 #include <windows.h>
 
+// Configuration
 unsigned char payloadBuffer[] = { /* shellcode bytes go here */ };
 
 int main()
