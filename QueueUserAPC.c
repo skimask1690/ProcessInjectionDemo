@@ -2,7 +2,7 @@
 
 // Configuration
 char *targetPath = "explorer.exe";
-unsigned char payloadBuffer[] = { /* shellcode bytes go here. the shellcode must exit the process, otherwise the process will continue its normal startup */ }
+unsigned char payloadBuffer[] = { /* shellcode bytes go here. the shellcode must exit the process, otherwise the process will continue its normal startup */ };
 
 int main() {
     STARTUPINFOA si = {0};
@@ -33,4 +33,5 @@ int main() {
     CloseHandle(pi.hThread);
     CloseHandle(pi.hProcess);
     return 0;
+
 }
