@@ -2,7 +2,7 @@
 
 // Configuration
 char *targetPath = "explorer.exe";
-unsigned char payloadBuffer[] = { /* shellcode bytes go here (unstable) */ };
+unsigned char payloadBuffer[] = { /* shellcode bytes go here */ };
 
 int main()
 {
@@ -50,5 +50,3 @@ int main()
     CloseHandle(pi.hProcess);
     return 0;
 }
-
-
