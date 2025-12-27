@@ -1,5 +1,3 @@
-## Injection Techniques
-
 ### CurrentThread
 Allocates memory in the current process, injects a payload, marks the memory as executable, and executes the payload directly on the current thread.
 
