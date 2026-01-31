@@ -4,7 +4,7 @@ Allocates memory in the current process, injects a payload, marks the memory as 
 ### EnumDisplayMonitors
 Injects a payload into the current process, marks it executable, and passes its address to `EnumDisplayMonitors` to be invoked via the enumeration callback.
 
-### Process Hollowing
+### Process Hollowing (RunPE)
 Creates a target process in a suspended state, injects a payload into its memory, modifies the primary thread's instruction pointer to the payload, and resumes execution.
 
 ### QueueUserAPC (Early Bird)
